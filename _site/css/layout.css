@@ -2,6 +2,7 @@ main {
     display: flex;
     flex-direction: column;
     height: 714px;
+    margin: 10px 0;
 }
 
 .container {
@@ -51,4 +52,18 @@ main {
     background-color: #fff;
     height: 1.5px;
     width: 75px;
+}
+
+@media screen and (max-width: 961px) {
+  main {
+    height: 515px;
+    background-position: 28% 50%;
+    background-size: cover;
+  }
+
+  .container {
+      padding: 20px;
+  }
+
+
 }
