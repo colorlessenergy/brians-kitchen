@@ -1,0 +1,54 @@
+main {
+    display: flex;
+    flex-direction: column;
+    height: 714px;
+}
+
+.container {
+    padding: 40px;
+}
+
+.owl-nav {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-size: 40px;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+.owl-dots {
+    bottom: 0;
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.owl-dots .owl-dot {
+    padding: 8px 3px 45px;
+    display: inline-block;
+
+}
+
+.owl-dots .owl-dot.active span {
+    background-color: rgba(255,255,255,.5)
+}
+
+.owl-dots .owl-dot span {
+    display: block;
+    background-color: #fff;
+    height: 1.5px;
+    width: 75px;
+}

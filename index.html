@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="container">
+     {% include responsive-nav.html %}
+
+
+    <div class="owl-carousel owl-theme">
+        <main class="item" style="background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url({{site.baseurl}}/imgs/tacos.jpg);">
+            {% include header.html %}
+        
+            <section class="hero-text">
+                <h2>Brians Kitchen</h2>
+                <p>click to play</p>
+            </section>
+        </main>
+        <main class="item" style="background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url({{site.baseurl}}/imgs/burrito.jpg);">
+            {% include header.html %}
+        
+            <section class="hero-text">
+                <h2>best burrito NA</h2>
+                <p>click to play</p>
+            </section>
+        </main>
+        <main class="item" style="background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url({{site.baseurl}}/imgs/quesadilla.jpg);">
+            {% include header.html %}
+        
+            <section class="hero-text">
+                <h2>Pretty good quesdilla</h2>
+                <p>click to play</p>
+            </section>
+        </main>
+    </div>
+</div>

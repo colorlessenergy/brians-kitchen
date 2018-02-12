@@ -1,0 +1,13 @@
+html, body {
+    font-family: Arial;
+    letter-spacing: 0.2em;
+    line-height: 1.8;
+    margin: 0;
+}
+
+header {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 32px 0;
+}
