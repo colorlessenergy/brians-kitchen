@@ -1,11 +1,7 @@
 $( document ).ready(function() {
   // setting for the responsive nav and enable the responsive navigation
 
-  var iconHamburger = document.querySelector("#icon-hamburger");
-  var showReponsiveNav = document.querySelector(".responsive-nav");
-  iconHamburger.addEventListener("click", function () {
-      showReponsiveNav.classList.toggle("responsive-nav-show")
-  });
+
 
   // owl carousel
 
