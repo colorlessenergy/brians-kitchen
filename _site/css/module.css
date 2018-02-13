@@ -216,6 +216,15 @@
   height: 30px;
 }
 
+/*ABOUT-ME STYLES*/
+.nav__cta--black {
+  border-color: #000;
+}
+
+.nav__cta--black {
+  border-color: black;
+}
+
 @media screen and (max-width: 961px) {
 
     .footer--recipe {
