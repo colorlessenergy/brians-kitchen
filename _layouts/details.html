@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brian Kitchen</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/base.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/layout.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/module.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/state.css">
+
+    <!-- font awesome -->
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="container">
+    {% include responsive-nav.html %}
+
+    {% include header.html class="nav__ul--color" %}
+
+    <section class="main-content">
+      <div class="main-content__div">
+        <img src="{{ site.baseurl }}/{{ page.item-picture }}" alt="{{ page.item-title }}">
+        <h3 class="main-content__h3 main-content__title">{{ page.item-title }}</h3>
+
+        <div class="main-content__text">
+          <div class="main-content__ingredients">
+            <h3 class="main-content__h3">ingredients</h3>
+            <p class="main-content__p">
+            {{ page.ingredients }}
+            </p>
+          </div>
+          <div class="main-content__details">
+            <h3 class="main-content__h3">details</h3>
+
+            <p class="main-content__p">
+              {{ page.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      {% include footer.html class="footer--recipe" %}
+  </div>
+  <script src="{{ site.baseurl }}/nav.js" charset="utf-8"></script>
+</body>
+</html>

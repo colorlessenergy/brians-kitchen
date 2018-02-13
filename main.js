@@ -1,7 +1,4 @@
 $( document ).ready(function() {
-  // setting for the responsive nav and enable the responsive navigation
-
-
 
   // owl carousel
 

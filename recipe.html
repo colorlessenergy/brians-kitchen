@@ -75,6 +75,15 @@ layout: default
       <img src="imgs/tacos.jpg" alt="tacos">
       <p>tacos</p>
     </div>
+
+    {% for post in site.categories['food'] %}
+      <a href="{{ post.url }}">
+        <div class="recipes__div">
+          <img src="{{ post.item-picture }}" alt="{{ post.item-title }}">
+          <p>{{ post.item-title }}</p>
+        </div>
+      </a>
+    {% endfor %}
   </section>
   {% include footer.html class="footer--recipe" %}
 </div>

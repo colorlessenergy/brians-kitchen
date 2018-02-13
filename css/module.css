@@ -48,6 +48,54 @@
     font-weight: 600
 }
 
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content__div {
+  padding: 80px 45px;
+  width: 80%;
+}
+
+.main-content__div img {
+  width: 100%;
+}
+
+.main-content__title {
+  margin: 50px 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-content__h3 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.main-content__p {
+  font-size: 16.5px;
+  letter-spacing: .02em;
+  line-height: 1.8em;
+}
+
+.main-content__ingredients {
+  width: 30%;
+  margin-right: 5%;
+}
+
+.main-content__details {
+  width: 60%;
+  margin-left: 5%;
+}
+
+.main-content__text {
+  display: flex;
+}
+
 .nav__ul {
     align-items: center;
     display: flex;
@@ -177,6 +225,23 @@
     .recipes {
       grid-template-columns: 1fr;
       padding: 60px 20px;
+    }
+
+    .main-content__text {
+      flex-direction: column;
+    }
+
+    .main-content__title {
+      margin: 0;
+    }
+
+    .main-content__div {
+      padding: 60px 20px;
+    }
+
+    .main-content__details, .main-content__ingredients {
+      margin: 0;
+      width: 100%;
     }
 
     .recipes__div {
