@@ -1,1 +1,7 @@
 baseurl: /brians-kitchen
+
+
+collections:
+  recipes:
+    output: true
+    permalink: /recipes/:path/

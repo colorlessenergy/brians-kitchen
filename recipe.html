@@ -76,11 +76,11 @@ layout: default
       <p>tacos</p>
     </div>
 
-    {% for post in site.categories['food'] %}
-      <a href="{{ post.url }}">
+    {% for item in site.recipes %}
+      <a href="{{ item.url }}">
         <div class="recipes__div">
-          <img src="{{ post.item-picture }}" alt="{{ post.item-title }}">
-          <p>{{ post.item-title }}</p>
+          <img src="{{ item.item-picture }}" alt="{{ item.item-title }}">
+          <p>{{ item.item-title }}</p>
         </div>
       </a>
     {% endfor %}
