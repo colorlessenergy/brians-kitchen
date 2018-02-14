@@ -1,8 +1,10 @@
 main {
     display: flex;
     flex-direction: column;
-    height: 714px;
+    /*height: 714px;*/
     margin: 10px 0;
+    background-repeat: no-repeat;
+    height: calc(100vh - 80px);
 }
 
 .container {
