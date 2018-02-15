@@ -10,7 +10,7 @@ layout: default
     {% for item in site.recipes %}
       <a class="recipes__a" href="{{ site.baseurl }}{{ item.url }}">
         <div>
-          <img src="{{ site.baseurl }}{{ item.item-picture }}" alt="{{ item.item-title }}">
+          <img src="{{ site.baseurl }}/{{ item.item-picture }}" alt="{{ item.item-title }}">
           <p>{{ item.item-price }} {{ item.item-title }}</p>
         </div>
       </a>
