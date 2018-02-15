@@ -15,7 +15,8 @@ collections:
     fields:
       - {label: "title of the item", name: "item-title", widget: "string"}
       - {label: "price of the item", name: "item-price", widget: "number"}
-      - {label: "picture of the item", name: "item-picture", widget: "string"}
+      - {label: "picture of the item", name: "item-picture", widget: "image"}
+      - {label: "the image of the product, that will show up on the cms", name: "thumbnail", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "details"}
       - {label: "categories of the item", name: "categories", widget: "string"}
       - {label: "ingredients of the item", name: "ingredients", widget: "text"}

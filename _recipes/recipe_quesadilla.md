@@ -1,9 +1,10 @@
 ---
-item-title: taco
+item-title: quesadilla
 item-price: $10.00
-item-picture: imgs/tacos.jpg
+item-picture: imgs/quesadilla.jpg
+thumbnail: imgs/quesadilla.jpg
 layout: details
 categories: food
 ingredients: tortilla, beans, chili and plenty of vegetables
-description: This taco is the best god damn taco i have every eaten in my whole life
+description: This quesadilla is the best god damn quesadilla i have every eaten in my whole life
 ---
