@@ -1,8 +1,8 @@
 ---
 title: tacos
 item-price: $10.00
-item-picture: imgs/tacos.jpg
-thumbnail: imgs/tacos.jpg
+item-picture: /imgs/tacos.jpg
+thumbnail: /imgs/tacos.jpg
 layout: details
 categories: food
 ingredients: tortilla, beans, chili and plenty of vegetables

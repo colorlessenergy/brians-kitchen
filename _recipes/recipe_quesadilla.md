@@ -1,8 +1,8 @@
 ---
 title: quesadilla
 item-price: $10.00
-item-picture: imgs/quesadilla.jpg
-thumbnail: imgs/quesadilla.jpg
+item-picture: /imgs/quesadilla.jpg
+thumbnail: /imgs/quesadilla.jpg
 layout: details
 categories: food
 ingredients: tortilla, beans, chili and plenty of vegetables
