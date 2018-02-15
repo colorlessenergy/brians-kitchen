@@ -4,7 +4,9 @@ main {
     /*height: 714px;*/
     margin: 10px 0;
     background-repeat: no-repeat;
+    background-size: cover;
     height: calc(100vh - 80px);
+    background-position: center;
 }
 
 .container {
