@@ -1,0 +1,20 @@
+backend:
+  name: colorlessenergy/brians-kitchen
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "imgs"
+
+collections:
+  - name: "recipes" # Used in routes, e.g., /admin/collections/blog
+    label: "recipes" # Used in the UI
+    folder: "_recipes" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., title.md
+    fields:
+      - {label: "title of the item", name: "item-title", widget: "string"}
+      - {label: "price of the item", name: "item-price", widget: "number"}
+      - {label: "picture of the item", name: "item-picture", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "details"}
+      - {label: "categories of the item", name: "categories", widget: "string"}
+      - {label: "ingredients of the item", name: "ingredients", widget: "text"}
+      - {label: "description of the item", name: "description", widget: "text"}
