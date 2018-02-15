@@ -1,6 +1,8 @@
 backend:
-  name: colorlessenergy/brians-kitchen
-  branch: master # Branch to update (optional; defaults to master)
+  name: github
+  repo: colorlessenergy/brians-kitchen # Path to your Github repository
+  branch: master # Branch to update
+
 
 media_folder: "imgs"
 
