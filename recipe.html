@@ -7,80 +7,11 @@ layout: default
   {% include header.html class="nav__ul--color" %}
 
   <section class="recipes">
-    <div class="recipes__div">
-      <img src="imgs/burrito.jpg" alt="burrito">
-      <p>burrito</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/quesadilla.jpg" alt="quesadilla">
-      <p>quesadilla</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/tacos.jpg" alt="tacos">
-      <p>tacos</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/burrito.jpg" alt="burrito">
-      <p>burrito</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/burrito.jpg" alt="burrito">
-      <p>burrito</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/quesadilla.jpg" alt="quesadilla">
-      <p>quesadilla</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/tacos.jpg" alt="tacos">
-      <p>tacos</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/burrito.jpg" alt="burrito">
-      <p>burrito</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/burrito.jpg" alt="burrito">
-      <p>burrito</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/quesadilla.jpg" alt="quesadilla">
-      <p>quesadilla</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/tacos.jpg" alt="tacos">
-      <p>tacos</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/burrito.jpg" alt="burrito">
-      <p>burrito</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/burrito.jpg" alt="burrito">
-      <p>burrito</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/quesadilla.jpg" alt="quesadilla">
-      <p>quesadilla</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/tacos.jpg" alt="tacos">
-      <p>tacos</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/burrito.jpg" alt="burrito">
-      <p>burrito</p>
-    </div>
-    <div class="recipes__div">
-      <img src="imgs/tacos.jpg" alt="tacos">
-      <p>tacos</p>
-    </div>
-
     {% for item in site.recipes %}
-      <a href="{{ item.url }}">
-        <div class="recipes__div">
-          <img src="{{ item.item-picture }}" alt="{{ item.item-title }}">
-          <p>{{ item.item-title }}</p>
+      <a class="recipes__a" href="{{ site.baseurl }}{{ item.url }}">
+        <div>
+          <img src="{{ site.baseurl }}{{ item.item-picture }}" alt="{{ item.item-title }}">
+          <p>{{ item.item-price }} {{ item.item-title }}</p>
         </div>
       </a>
     {% endfor %}
