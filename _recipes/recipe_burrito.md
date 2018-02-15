@@ -1,5 +1,5 @@
 ---
-item-title: Burrito
+title: Burrito
 item-price: $10.00
 item-picture: imgs/burrito.jpg
 thumbnail: imgs/burrito.jpg

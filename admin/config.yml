@@ -12,8 +12,8 @@ collections:
     folder: "_recipes" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., title.md
-    fields:
-      - {label: "title of the item", name: "item-title", widget: "string"}
+    fields: # The fields for each document, usually in front matter
+      - {label: "title of the item", name: "title", widget: "string"}
       - {label: "price of the item", name: "item-price", widget: "number"}
       - {label: "picture of the item", name: "item-picture", widget: "image"}
       - {label: "the image of the product, that will show up on the cms", name: "thumbnail", widget: "image"}

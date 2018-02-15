@@ -1,5 +1,5 @@
 ---
-item-title: quesadilla
+title: quesadilla
 item-price: $10.00
 item-picture: imgs/quesadilla.jpg
 thumbnail: imgs/quesadilla.jpg
