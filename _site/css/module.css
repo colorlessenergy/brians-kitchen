@@ -255,6 +255,16 @@
   justify-content: space-around;
 }
 
+.flex-container--food a {
+  color: #000;
+  text-decoration: none;
+}
+
+.flex-container--food a:hover {
+  color: #047b6b;
+  text-decoration: underline;
+}
+
 .flex-container--about > div,
 .flex-container--food > div {
   width: 300px;
