@@ -233,6 +233,47 @@
   border-color: black;
 }
 
+.container-about h3,
+.img-container,
+.flex-container--about__p {
+  text-align: center;
+}
+
+.img-container {
+  margin-top: 15px;
+}
+
+.img-container img {
+  height: 200px;
+}
+
+.flex-container--about,
+.flex-container--food {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.flex-container--about > div,
+.flex-container--food > div {
+  width: 300px;
+}
+
+.flex-container--about {
+  padding: 20px;
+}
+
+.flex-container--about > div:nth-of-type(2) {
+  width: 500px;
+}
+
+/*do you know da wae*/
+.flex-container--about img,
+.flex-container--food img {
+  height: 200px;
+}
+
 @media screen and (max-width: 961px) {
 
     .footer--recipe {
@@ -290,5 +331,21 @@
       line-height: 1;
       font-weight: 300;
       text-align: center;
+    }
+
+    /*about-me styles*/
+    .img-container img,
+    .flex-container--about img,
+    .flex-container--food img {
+      width: 100%;
+      height: unset;
+    }
+
+    .flex-container--about {
+      padding: 0;
+    }
+
+    .flex-container--about > div:nth-of-type(2) {
+      width: 400px;
     }
 }
