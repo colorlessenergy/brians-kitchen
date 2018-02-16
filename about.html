@@ -4,26 +4,34 @@ layout: default
 <div class="container container-about">
   {% include responsive-nav.html %}
   {% include header.html class="nav__ul--color" border="nav__cta--black" %}
+  {% for item in site.about %}
   <div class="img-container">
-    <img src="imgs/cat-lg.jpg" alt="A picture of a cat">
+    <img src="{{ item.picture }}" alt="A picture of a cat">
   </div>
 
   <div>
-    <h3>Brian</h3>
+    <h3>{{ item.title }}</h3>
     <div class="flex-container--about">
       <div>
         <p class="flex-container--about__p">Bio</p>
         <ul>
-          <li>Video maker, translator</li>
-          <li>English / Spanish</li>
-          <li>Long Beach, California</li>
+
+          {% assign current = item.meta | split: "* " %}
+          {% for currentItem in current %}
+          <li>{{ currentItem }}</li>
+          {% endfor %}
         </ul>
       </div>
       <div>
-        <p>Hi, my name is Brian. I like cooking but I'm not a professional chef. I started cooking for myself when I moved out of home for university, and I started experimenting with new recipes. I worked in a restaurant once... washing dishes... but that's it!</p>
+        <p>{{ item.description }}</p>
       </div>
     </div>
   </div>
+  {% endfor %}
+
+
+
+
 
   <div>
     <h3>Food</h3>
