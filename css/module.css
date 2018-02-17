@@ -9,6 +9,12 @@
   padding: 0;
 }
 
+.footer__ul a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .footer__ul .social {
   margin: 0 6px;
 }
