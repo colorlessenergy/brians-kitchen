@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="container container-about">
   {% include responsive-nav.html %}
-  {% include header.html class="nav__ul--color" border="nav__cta--black" %}
+  {% include header.html class="nav__ul--color" border="nav__cta--black" svg="nav__logo--color" %}
   {% for item in site.about %}
   <div class="img-container">
     <img src="{{ item.picture }}" alt="A picture of a cat">
@@ -12,26 +12,21 @@ layout: default
   <div>
     <h3>{{ item.title }}</h3>
     <div class="flex-container--about">
-      <div>
+      <div class="flex-container__div">
         <p class="flex-container--about__p">Bio</p>
         <ul>
-
           {% assign current = item.meta | split: "* " %}
           {% for currentItem in current %}
           <li>{{ currentItem }}</li>
           {% endfor %}
         </ul>
       </div>
-      <div>
+      <div class="flex-container__div">
         <p>{{ item.description }}</p>
       </div>
     </div>
   </div>
   {% endfor %}
-
-
-
-
 
   <div>
     <h3>Food</h3>
@@ -41,7 +36,7 @@ layout: default
           <a href="{{ item.url }}">
           <img src="{{ site.baseurl }}{{ item.item-picture }}" alt="A picture of a burrito">
           <h3>{{ item.title }} </h3>
-          <p>{{ item.description }}</p>
+          <p class="flex-container--food__p">{{ item.description }}</p>
         </a>
         </div>
 
